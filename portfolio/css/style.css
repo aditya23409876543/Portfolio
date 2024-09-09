@@ -51,11 +51,28 @@ nav {
 
 /* Home Section */
 #home {
-    height: 100vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+#home {
+    logo-container {
+        width: 30px;
+        height: 30px;
+        perspective: 100px; /* Adds 3D perspective */
+    }
+    
+    .logo {
+        border-radius: 1dvh;
+        width: 50%;
+        height: 50%;
+        transition: transform 0.1s ease-out; /* Smooth transition */
+        transform-style: preserve-3d;
+        transform: rotateX(0deg) rotateY(0deg); /* Initial flat position */
+    }
+    
 }
 
 #home .intro {
@@ -68,12 +85,12 @@ nav {
 
 /* About Section */
 #about {
-    padding: 50px 20px;
+    padding: 5px 2px;
     text-align: center;
 }
 
 #projects {
-    padding: 50px 20px;
+    padding: 100px 20px;
     text-align: center;
 }
 
@@ -87,6 +104,7 @@ nav {
 .project {
     width: 300px;
     padding: 20px;
+    border-radius: 1dvh;
     border: 1px solid #ddd;
     background-color: #fff;
 }
@@ -106,13 +124,14 @@ form {
 
 input, textarea {
     padding: 10px;
+    border-radius: 1dvh;
     border: 1px solid #ddd;
     width: 100%;
 }
 
 button {
     padding: 10px;
-    border: none;
+    border-radius: 1dvh;
     background-color: #007bff;
     color: #fff;
     cursor: pointer;
@@ -120,15 +139,32 @@ button {
 
 button:hover {
     background-color: #0056b3;
+    border-radius: 1dvh;
 }
 
-/* Footer */
 footer {
+    text-align: center;
+    padding: 20px;
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
 }
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f39c12; /* Change to your preferred hover color */
+}
+
 
 /* Dark Mode Styles */
 .dark-mode {
@@ -150,3 +186,5 @@ footer {
         margin: 10px 0;
     }
 }
+
+/* Styles for rotating image near the logo */
