@@ -4,10 +4,23 @@
     --surface-color: #F4F2ED;
     /* Soft Beige Cards */
     --element-bg: #E6E4DC;
-    /* Light element background for icons/inputs */
+    /* Light element background */
     --accent-color: #242E28;
-    /* Dark Green for text/highlights on cards */
-    --accent-light: #526B5E;
+
+    /* Vibrant Palette */
+    --color-1: #FF9AA2;
+    /* Pastel Pink */
+    --color-2: #FFB7B2;
+    /* Pastel Salmon */
+    --color-3: #FFDAC1;
+    /* Pastel Peach */
+    --color-4: #E2F0CB;
+    /* Pastel Lime */
+    --color-5: #B5EAD7;
+    /* Pastel Mint */
+    --color-6: #C7CEEA;
+    /* Pastel Purple */
+
     --text-primary: #1C1C1C;
     --text-secondary: #4A4A48;
     --border-color: #D6D4CE;
@@ -110,10 +123,10 @@ a {
 
 .name {
     font-family: var(--font-heading);
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 400;
     margin-bottom: 8px;
-    color: var(--accent-color);
+    color: var(--text-primary);
 }
 
 .role {
@@ -223,10 +236,16 @@ a {
 .section-title {
     font-family: var(--font-heading);
     font-size: 32px;
-    color: var(--surface-color);
-    /* White/Beige for contrast on dark bg */
+    /* color: var(--surface-color);  Fallback handled below */
     margin-bottom: 24px;
     font-weight: 400;
+
+    background: linear-gradient(45deg, var(--color-3), var(--color-5));
+    /* Peach to Mint */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: var(--surface-color);
 }
 
 .card {
@@ -281,17 +300,51 @@ a {
     /* Light green hover */
 }
 
+.skill-item:nth-child(6n+1) .skill-icon {
+    background: var(--color-1);
+    color: #333;
+}
+
+.skill-item:nth-child(6n+2) .skill-icon {
+    background: var(--color-2);
+    color: #333;
+}
+
+.skill-item:nth-child(6n+3) .skill-icon {
+    background: var(--color-3);
+    color: #333;
+}
+
+.skill-item:nth-child(6n+4) .skill-icon {
+    background: var(--color-4);
+    color: #333;
+}
+
+.skill-item:nth-child(6n+5) .skill-icon {
+    background: var(--color-5);
+    color: #333;
+}
+
+.skill-item:nth-child(6n+6) .skill-icon {
+    background: var(--color-6);
+    color: #333;
+}
+
 .skill-icon {
     width: 48px;
     height: 48px;
-    background: var(--element-bg);
-    /* Light bg instead of dark */
+    /* background: var(--element-bg);  Removed to let nth-child override */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--accent-color);
     margin-bottom: 4px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover .skill-icon {
+    transform: rotate(10deg) scale(1.1);
 }
 
 .icon-svg {
@@ -451,8 +504,10 @@ textarea:focus {
 }
 
 .btn-primary:hover {
-    background: var(--accent-light);
+    background: linear-gradient(45deg, var(--color-1), var(--color-2));
+    color: #1c1c1c;
     transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 154, 162, 0.4);
 }
 
 /* Footer */
