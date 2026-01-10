@@ -1,98 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <title>Aditya Dhanraj - Creative Designer & Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-          
-              
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button class="theme-toggle" id="theme-toggle">🌙</button></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Rest of your page content -->
-    <section id="home">
-        <div class="logo-container">
-            <a href="#foot"><img src="my pic.jpeg" alt="3D Hovering Logo" class="logo"></a>
-        </div>
-        <div class="intro">
-            <h1>Hi, I'm <span>Aditya Dhanraj</span></h1>
-            <p>Student| Designer</p>
-        </div>
-    </section>
+    <div class="layout-grid">
+        <!-- Sticky Profile Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-card fade-in">
+                <div class="profile-image-container">
+                    <img src="assets/profile.jpeg" alt="Aditya Dhanraj" class="profile-image">
+                </div>
+                <h1 class="name">Aditya Dhanraj</h1>
+                <p class="role">Designer | Web Developer</p>
+                <p class="bio-short">Passionate about crafting intuitive digital experiences and blending design with
+                    technology.</p>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            <i>
-                Hi, I am Aditya, a 2nd-year BTech student at SRM Ramapuram.<br>
-                I began my journey earlier this year and have been practicing since then.<br>
-                Some tools that I am familiar with are Figma, Canva, InDesign, and Illustrator.<br>
-                I am looking forward to learning UI/UX and web development by the end of my 3rd year.
-            </i>
-        </p>
-        
-    </section>
+                <div class="contact-mini">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dhanrajaditya230@gmail.com" target="_blank"
+                        class="contact-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Email Me
+                    </a>
+                    <a href="tel:+918667492194" class="contact-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        Call Me
+                    </a>
+                </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project">
-                <h3>ID Card</h3>
-                <p><a href="https://www.figma.com/design/AhWtKeOGu5Izcp2zM3f2Ys/Untitled-(Copy)?m=auto&t=sSEpO5o9ACSVsRZ7-6">Figma</a></p>
+                <nav class="sidebar-nav">
+                    <a href="#about" class="nav-link active">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/aditya-dhanraj-09225726b" target="_blank" class="social-icon"
+                        aria-label="LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/aditya23409876543" target="_blank" class="social-icon"
+                        aria-label="GitHub">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
             </div>
-            <div class="project">
-                <h3>Other Projects</h3>
-                <p><a href="https://sway.cloud.microsoft/4iTVu0WP2Vy2KkqE?ref=Link&loc=play">My projects</a></p>
-            </div>
-        </div>
-    </section>
+        </aside>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="https://formspree.io/f/xrbzdvlq" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        
-    </section>
+        <!-- Main Content Area -->
+        <main class="main-content">
 
-    <footer>
-        <section id="foot">
-        <p>© 2024 Aditya</p>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/__https.aditya__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://x.com/Aditya250189455?t=fKO1JxmdLKlGTw64EDZP6Q&s=09" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/aditya-dhanraj-09225726b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/aditya23409876543" target="_blank">
-                    <i class="fab fa-github"></i>
-            </a>
-        </div>
-        </section>
-    </footer>
-    
+            <section id="about" class="content-section fade-in">
+                <h2 class="section-title">About Me</h2>
+                <div class="card">
+                    <p class="text-body">
+                        I am a B.Tech student with a deep passion for <strong>Graphic Design, UI/UX, and Web
+                            Development</strong>.
+                        My journey involves bridging the gap between aesthetics and functionality. I have hands-on
+                        experience working with
+                        startups and agencies, refining my skills in creating user-centered designs and robust web
+                        solutions.
+                    </p>
+                    <p class="text-body mt-2">
+                        Currently, I'm exploring the intersection of design and emerging tech like Generative AI and
+                        Blockchain.
+                    </p>
+                </div>
+            </section>
 
-    <script src="js/main.js"></script>
+            <section id="skills" class="content-section fade-in">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid-new">
+                    <!-- Design -->
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <span>UI/UX Design</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                <path d="M12 19l7-7 3 3-7 7-3-3zM18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5zM2 2l7.586 7.586"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <span>Graphic Design</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 38 57" fill="none" class="icon-svg">
+                                <path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z" fill="currentColor" />
+                                <path d="M0 47.5a9.5 9.5 0 0 1 19 0v9.5H9.5A9.5 9.5 0 0 1 0 47.5z"
+                                    fill="currentColor" />
+                                <path d="M0 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z" fill="currentColor" />
+                                <path d="M0 9.5A9.5 9.5 0 0 1 9.5 0h9.5v19H9.5A9.5 9.5 0 0 1 0 9.5z"
+                                    fill="currentColor" />
+                                <path d="M19 0h9.5a9.5 9.5 0 0 1 0 19H19V0z" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <span>Figma</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <span>Adobe Suite</span>
+                    </div>
+
+                    <!-- Dev -->
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <span>HTML/CSS</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                <path
+                                    d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16z"
+                                    stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <line x1="6" y1="1" x2="6" y2="4"></line>
+                                <line x1="10" y1="1" x2="10" y2="4"></line>
+                                <line x1="14" y1="1" x2="14" y2="4"></line>
+                            </svg>
+                        </div>
+                        <span>Java</span>
+                    </div>
+
+                    <!-- Tech -->
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                        </div>
+                        <span>SQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                        <span>Blockchain</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                <path d="M12 2L15 9 22 12 15 15 12 22 9 15 2 12 9 9z" stroke="currentColor"
+                                    stroke-width="2" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <span>Gen AI</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="content-section fade-in">
+                <h2 class="section-title">Experience</h2>
+
+                <div class="timeline">
+                    <div class="card timeline-item">
+                        <span class="date">Sep 2025 – Nov 2025</span>
+                        <h3>Graphic Design Intern</h3>
+                        <h4>Talentronaut</h4>
+                        <p>Led visual content creation and branding initiatives.</p>
+                    </div>
+
+                    <div class="card timeline-item">
+                        <span class="date">Jan 2025</span>
+                        <h3>Graphic Design Intern</h3>
+                        <h4>Inamigo</h4>
+                        <p>Worked on social media assets and marketing collateral.</p>
+                    </div>
+
+                    <div class="card timeline-item">
+                        <span class="date">Dec 2024 – Jan 2025</span>
+                        <h3>Graphic Design Intern</h3>
+                        <h4>Internship Studio</h4>
+                        <p>Collaborated with cross-functional teams to deliver high-quality design work.</p>
+                    </div>
+
+                    <div class="card timeline-item">
+                        <span class="date">Nov 2024</span>
+                        <h3>Product Design Job Simulator</h3>
+                        <h4>Accenture</h4>
+                        <p>Completed practical tasks simulating real-world product design challenges.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="content-section fade-in">
+                <h2 class="section-title">Education</h2>
+                <div class="card">
+                    <div class="edu-item">
+                        <div class="edu-header">
+                            <h3>B.Tech in Computer Science</h3>
+                            <span class="date">2027</span>
+                        </div>
+                        <p>SRM Institute of Science and Technology, Ramapuram</p>
+                    </div>
+                    <hr class="divider">
+                    <div class="edu-item">
+                        <div class="edu-header">
+                            <h3>CBSE 12th Grade (PCM)</h3>
+                            <span class="date">2023</span>
+                        </div>
+                        <p>Advaith International Academy</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certificates" class="content-section fade-in">
+                <h2 class="section-title">Certificates</h2>
+                <a href="https://drive.google.com/drive/folders/114IolFlKQ2Xmfeh9mpmD2cZw5xXHDcrh"
+                    class="card link-card">
+                    <div class="link-card-content">
+                        <div class="icon-box">📂</div>
+                        <div>
+                            <h3>View Certificates</h3>
+                            <p>Browse my certification folder on Google Drive</p>
+                        </div>
+                    </div>
+                    <div class="arrow">→</div>
+                </a>
+            </section>
+
+            <section id="contact" class="content-section fade-in">
+                <h2 class="section-title">Let's Connect</h2>
+                <form class="card contact-form" action="https://formspree.io/f/xrbzdvlq" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </section>
+
+            <footer class="footer">
+                <p>&copy; 2025 Aditya Dhanraj. Built with passion.</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
